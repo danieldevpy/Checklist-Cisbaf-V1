@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta name="Cache-Control" content="no-cache">
+    <title>Login Checklist Diario</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="login.css" media="screen" />
+  </head>
+  <body>
+
+    <main>
+        <form method="POST" action="confirma.php">
+            <div class="container">
+
+                <div class="caixa2">
+                    <div class="cx21">
+                        <span class="fonts">Checklist Diário</span>
+                        <img src="img/check.png" />
+                        <div class="fleximgs">
+                            <img class="logo" src="img/logo.png" />
+                            <img class="samu" src="img/samulogo.png" />
+                        </div>
+
+                    </div>
+
+                    <div class="cx22">
+                        <div class="login">
+                            <h1>Login</h1>
+                        </div>
+                        <div class="inputs">
+                            <span>ID</span>
+                            <input type="text" id="nome" name="id" class="inpt" />
+                        </div>
+                        <div class="inputs">
+                            <span>SENHA</span>
+                            <input class="inpt" id="password" name="password" type="password" />
+                        </div>
+                        <button class="button">ENTRAR</button>
+                    </div>
+
+                </div>
+            </div>
+        </form>
+    </main>
+	
+	<script>
+	var nome = document.getElementById("nome");	
+	nome.addEventListener("keypress",(event)=>{
+		event.preventDefault();
+		nome.value += event.key.toUpperCase();
+	})	
+	</script>
+	
+  </body>
+</html>
